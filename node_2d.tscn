@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://4pqund3nukl7"]
+
+[ext_resource type="Script" uid="uid://crdu12gjbnt2w" path="res://textbar.gd" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://bqhgqobytqado" path="res://texture_button.gd" id="2_0e48y"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_epypp"]
+
+[sub_resource type="Theme" id="Theme_ex85l"]
+
+[node name="Node2D" type="Node2D" unique_id=1708218326]
+
+[node name="Label" type="Label" parent="." unique_id=272742465]
+offset_right = 727.0
+offset_bottom = 181.0
+theme_override_font_sizes/font_size = 29
+text = "Hello World"
+
+[node name="LineEdit" type="LineEdit" parent="Label" unique_id=543297702]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 239.0
+offset_right = 593.0
+offset_bottom = 319.0
+script = ExtResource("1_wtcfe")
+
+[node name="TextureButton" type="TextureButton" parent="Label" unique_id=106438384]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 222.0
+offset_right = 825.0
+offset_bottom = 359.0
+tooltip_text = "Click"
+theme = SubResource("Theme_ex85l")
+texture_normal = ExtResource("2_epypp")
+script = ExtResource("2_0e48y")
+
+[node name="OptionButton" type="OptionButton" parent="Label" unique_id=1221035762]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 383.0
+offset_right = 349.0
+offset_bottom = 508.0
+selected = 0
+item_count = 6
+popup/item_0/text = "1"
+popup/item_0/id = 0
+popup/item_1/text = "2"
+popup/item_1/id = 1
+popup/item_2/text = "3"
+popup/item_2/id = 2
+popup/item_3/text = "4"
+popup/item_3/id = 3
+popup/item_4/text = "5"
+popup/item_4/id = 4
+popup/item_5/text = "6"
+popup/item_5/id = 5
