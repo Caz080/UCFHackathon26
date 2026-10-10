@@ -89,3 +89,43 @@ text = "Person 1"
 [node name="Dialogue" type="Label" parent="Node2D/CanvasLayer/Control/MarginContainer/VBoxContainer" unique_id=422753417]
 layout_mode = 2
 text = "Hello world"
+
+[node name="Control2" type="Control" parent="Node2D/CanvasLayer" unique_id=1810580177]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Node2D/CanvasLayer/Control2" unique_id=525109222]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Node2D/CanvasLayer/Control2" unique_id=1906098454]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -155.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 280
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 280
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node2D/CanvasLayer/Control2/MarginContainer" unique_id=106656100]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Node2D/CanvasLayer/Control2/MarginContainer/VBoxContainer" unique_id=55929814]
+layout_mode = 2
+text = "Type question"
+
+[node name="Label" type="Label" parent="Node2D/CanvasLayer/Control2/MarginContainer/VBoxContainer" unique_id=1976311537]
+layout_mode = 2
+text = "Press enter to ask"
+horizontal_alignment = 1

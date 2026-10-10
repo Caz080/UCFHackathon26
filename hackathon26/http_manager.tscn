@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bmtcur1d4724r"]
+
+[ext_resource type="Script" uid="uid://dh24jwaaqsn6b" path="res://http_manager.gd" id="1_17u7c"]
+[ext_resource type="Script" uid="uid://cjoqq6mqe6y4p" path="res://speech.gd" id="2_xesf0"]
+
+[node name="HttpManager" type="Node2D" unique_id=1457992215]
+script = ExtResource("1_17u7c")
+
+[node name="TTS" type="Node" parent="." unique_id=376681977]
+script = ExtResource("2_xesf0")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="TTS" unique_id=707220539]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TTS" unique_id=1455405628]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=951621346]
